@@ -8,5 +8,6 @@ with open("favorites.csv", "r") as file:
         favorite = row["language"]
         counts[favorite] += 1
 
-    for favorite, count in counts.most_common():
-        print(f"{favorite}: {counts[favorite]}")
+favorite = input("Favorite: ")
+
+print(f"{favorite}: {counts[favorite]}")
